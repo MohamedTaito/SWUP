@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="icon" type="image/png" href="assets/img/1.png" sizes="196x196" />
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/main-style.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+  <!--  wrapper -->
+  <div id="wrapper">
+      <!-- navbar top -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+          <!-- navbar-header -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <br>
+              <a class="navbar-brand" href="file:///C:/Users/MTaito/Desktop/SWUP/madrasty/index.html"style="font-size:40px;font-family:red;color:orange">Madrasty</a>
+          </div>
+          <!-- end navbar-header -->
+          <!-- navbar-top-links -->
+          <ul class="nav navbar-top-links navbar-right">
+              <!-- main dropdown -->
+
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="fa fa-user fa-3x"></i>
+                  </a>
+                  <!-- dropdown user-->
+                  <ul class="dropdown-menu dropdown-user">
+                      <li><a href="UserProfile.html"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li><a id ="logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                      </li>
+                  </ul>
+                  <!-- end dropdown-user -->
+              </li>
+              <!-- end main dropdown -->
+          </ul>
+          <!-- end navbar-top-links -->
+
+      </nav>
+      <!-- end navbar top -->
+
+      <!-- navbar side -->
+      <nav class="navbar-default navbar-static-side" role="navigation">
+          <!-- sidebar-collapse -->
+          <div class="sidebar-collapse">
+              <!-- side-menu -->
+              <ul class="nav" id="side-menu">
+                  <li>
+                      <!-- user image section-->
+                      <div class="user-section">
+                          <div class="user-section-inner">
+                              <img src="assets/img/user.jpg" alt="">
+                          </div>
+                          <div class="user-info">
+                              <div><strong>Admin</strong></div>
+                              <div class="user-text-online">
+                                  <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
+                              </div>
+                          </div>
+                      </div>
+                      <!--end user image section-->
+                  </li>
+                <!--  <li class="sidebar-search">
+
+                      <div class="input-group custom-search-form">
+                          <input type="text" class="form-control" placeholder="Search...">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">
+                                  <i class="fa fa-search"></i>
+                              </button>
+                          </span>
+                      </div>
+                    -->
+                  </li>
+                  <li class="">
+                      <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-bars"></i> Categories<span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                          <li>
+                              <a href="University.html"><i class="fa fa-pencil-square-o"></i> University</a>
+                          </li>
+                          <li>
+                              <a href="School.html"><i class="fa fa-book"></i> School</a>
+                          </li>
+                          <li>
+                              <a href="Co-workingspace.html"><i class="fa fa-pencil"></i> Co-Working Space</a>
+                          </li>
+                      </ul>
+
+          <!-- end sidebar-collapse -->
+      </nav>
+        <!-- end navbar side -->
+        <!--  page-wrapper -->
+          <div id="page-wrapper">
+            <div class="row">
+                 <!-- page header -->
+                <div class="col-lg-12">
+                    <h1 class="page-header">Edit</h1>
+                </div>
+                <!--end page header -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Form Elements -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Edit Form
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                      <div class="form-group">
+                                          <label>Choose Category</label>
+                                          <select class="form-control" id="choose_cat">
+                                            <option></option>
+                                              <option value = 'University'>University</option>
+                                              <option value = 'School'>School</option>
+                                              <option value = 'Co-Workingspace'>Co-Working Space</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Select</label>
+                                          <select id="choose_ch" class="form-control" disabled>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label >Select</label>
+                                          <select id="college" class="form-control" disabled>
+                                            <option value="college">College</option>
+                                            <option value="tel">Tel</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Enter New Tel </label>
+                                          <input id="new" class="form-control"  type="text" placeholder="Enter New Tel" disabled>
+                                          </input>
+                                      </div>
+                                          <div class="form-group">
+                                              <label for="disabledSelect">Select</label>
+                                              <select id="dis" class="form-control"disabled></select>
+                                          </div>
+                                          <div class="form-group">
+                                              <label >Enter New Fee</label>
+                                              <input id="fee" class="form-control"  type="text" placeholder="Enter New Fee" disabled>
+                                              </input>
+                                          </div>
+                              <!--          <div class="form-group">
+                                            <label>Change img</label>
+                                            <input type="file">
+                                        </div>-->
+
+
+                                    </form>
+                                    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="reset" class="btn btn-success" id="reset">Reset</button>
+
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- End Form Elements -->
+                </div>
+            </div>
+        </div>
+        <!-- end page-wrapper -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+    <script src="assets/js/out.js"></script>
+    <script src="assets/js/edit.js"></script>
+
+
+</body>
+
+</html>

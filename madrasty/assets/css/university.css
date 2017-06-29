@@ -1,0 +1,11 @@
+th{
+  background: #04B173;
+  color: #fff;
+}
+.delete{
+  color: red;
+}
+.delete:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
