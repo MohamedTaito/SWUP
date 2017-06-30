@@ -1,1 +1,1 @@
-<?php echo "HomePage" ?>
+<?php header('Location: /madrasty'); ?>
