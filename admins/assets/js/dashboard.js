@@ -7,9 +7,9 @@ var config = {
   storageBucket: "swup-4ffb2.appspot.com",
   messagingSenderId: "442781535897"
 };
-firebase.initializeApp(config);
-firebase.auth().onAuthStateChanged(user => {
-  if(!user) {
-      window.location = 'login.html';
-  }
-});
+//firebase.initializeApp(config);
+//firebase.auth().onAuthStateChanged(user => {
+  //if(!user) {
+      //window.location = 'login.html';
+  //}
+//});

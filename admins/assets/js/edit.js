@@ -56,6 +56,7 @@ $("#college").change(function(){
   var un=uni.value;
   firebase.database().ref("/university" + "/" + un + "/" + "college").once("value",function(snapshot){
     var data = snapshot.val();
+    $("#dis").empty();
     for (var college in data) {
       $('#dis').append($('<option>', {
         value: college,
